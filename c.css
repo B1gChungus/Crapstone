@@ -20,7 +20,7 @@ body{
     column-gap: 1.5rem;
 
 }
-#nav > img{
+#nav img{
     width: 3rem;
     height:3rem;
     padding-left: 1rem;
@@ -61,7 +61,7 @@ body{
     left:50%;
     transform: translate(-50%, -50%);
     color: white;
-    font-size: 4rem;
+    font-size: 50px;
     height:10rem;
     width:70%;
     -webkit-text-stroke-width: 1px;
@@ -76,15 +76,16 @@ body{
     text-align: right;
     padding-right: 5rem;
     position: relative;
-    top:-30rem;
+    top:-28rem;
     right:0px;
     left:0px;
     bottom:0px;
     box-sizing: content-box;
+    height:35rem;
 }
 .section > .headingimg > img{
-    width: 25rem;
-    height:25rem;
+    width: 45rem;
+    height:35rem;
 }
 .section > .heading{
     text-align: center;
@@ -99,9 +100,11 @@ body{
     padding-left: 4rem;
     width: 50%;
     height: 50%;
-    font-size: 1.5rem;
+    font-size: 35px;
 }
-
+.text2,.text2 b{
+    color:#3863D9!important;
+}
 .dark{
     background-color: #172959;
     display: flex;
@@ -111,7 +114,7 @@ body{
     color: #3863D9!important;
     width: 100%;
     margin: 0 0 0 0;
-    padding: 5rem 0 0 0;
+    padding: 3rem 0 0 0;
     flex: 0 15%;
     height: 5rem;
 }
@@ -123,13 +126,13 @@ body{
     height: 15%;
 }
 .small{
-    height:10rem;
+    height:6rem!important;
     background-color: white;
 
 }
 #product{ 
- padding-left: 8rem;
- padding-right: 6rem;
+ padding-left: 15%;
+ padding-right: 12%;
  padding-top: 2rem;
  flex-direction: row;
  text-align: left;
@@ -156,11 +159,11 @@ body{
     column-gap: 2rem;
     padding-bottom: 2rem;
 }
-#contentlinks > img{
-    width: 5rem;
-    height:5rem;
+#contentlinks img{
+    width: 3rem;
+    height:3rem;
 }
-.darkheading{
+.darkheading,.darkheading b{
     color:#3863D9!important;
     -webkit-text-stroke-color: #3863D9!important;
 }
@@ -183,17 +186,45 @@ body{
     font-size: 2rem;
     padding-top: 2rem!important;
 }
-
+.infotab{
+    width: 50%;
+    margin-left:auto;
+    margin-right:auto;
+    margin-top:2rem;
+    height:30rem;
+    margin-bottom: 4rem;
+    background-color: #172959;
+    box-shadow: .2rem .2rem .4rem black;
+}
+.list{
+    display:flex;
+    justify-content: left;
+    flex-direction: column;
+    height: 80%;
+    padding-top:2rem;
+    padding-left: 1.5rem;
+    row-gap: 2rem;
+}
+.list p,.list b{
+    text-align: left;
+    font-size: 2rem;
+}
+.infotab > img{
+    width: 36rem;
+    height: 85%;
+    padding-left: 5%;
+    padding-top: 2rem;
+}
 @media only screen and (max-width: 600px) {
     #postermain>p{
         font-size: 1.5rem;
     }
-    .section > .headingimg > img,#product > img{
-        width: 5rem;
-        height: 5rem;
+    .section > .headingimg > img{
+        width: 40%;
+        height:70%;
     }  
     #nav > a{
-        font-size: .6rem;
+        font-size: 1rem;
     }
 }
 
@@ -201,19 +232,19 @@ body{
     #postermain>p{
         font-size: 2.5rem;
     }
-    .section > .headingimg > img,#product > img{
-        width: 10rem;
-        height: 10rem;
+    .section > .headingimg > img{
+        width: 40%;
+        height:70%;
     }  
     #nav > a{
-        font-size: .8rem;
+        font-size: 1rem;
     }
 }
 
 @media only screen and (min-width: 768px) {
-    .section > .headingimg > img,#product > img{
-        width: 15rem;
-        height: 15rem;
+    .section > .headingimg > img{
+        width: 40%;
+        height:70%;
     }  
     #postermain>p{
         font-size: 3rem;
@@ -224,9 +255,9 @@ body{
 }
 
 @media only screen and (min-width: 992px) {
-    .section > .headingimg > img,#product > img{
-        width: 20rem;
-        height: 20rem;
+    .section > .headingimg > img{
+       width: 40%;
+        height:70%;
     }   
     #postermain>p{
         font-size: 3.5rem;
@@ -237,9 +268,9 @@ body{
 }
 
 @media only screen and (min-width: 1200px) {
-    .section > .headingimg > img,#product > img{
-        width: 25rem;
-        height:25rem;
+    .section > .headingimg > img{
+        width: 40%;
+        height:70%;
     }
     #postermain>p{
         font-size: 4rem;
