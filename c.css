@@ -27,7 +27,7 @@ body{
 }
 #nav > a{
     text-decoration: none;
-    font-size: 1.5rem;
+    font-size: 24px;
     color:black;
 }
 #mainvideo{
@@ -45,6 +45,7 @@ body{
     width:100%;
     height:calc(100vh - 4rem);
     background-color: #172959;
+    transition: background-color 2s ease;
 }
 #postermain::after{
     content: '';
@@ -66,9 +67,10 @@ body{
     width:70%;
     -webkit-text-stroke-width: 1px;
     -webkit-text-stroke-color: black;
+    z-index: 2;
 }
 .section{
-    height:40rem;
+    height:80vh;
     width:100%;
     background-color: #3863D9;
 }
@@ -76,22 +78,26 @@ body{
     text-align: right;
     padding-right: 5rem;
     position: relative;
-    top:-28rem;
+    top:-80%;
     right:0px;
     left:0px;
     bottom:0px;
     box-sizing: content-box;
     height:35rem;
 }
-.section > .headingimg > img{
-    width: 45rem;
-    height:35rem;
+.section > img{
+    float:right;
+    width: 40%;
+    height:80%;
+    padding-right: 2rem;
+    padding-top:2rem;
+    padding-bottom:2rem;
 }
 .section > .heading{
     text-align: center;
     padding-left: 4rem;
-    font-size: 3rem;
-    padding-top: 8rem;
+    font-size: 48px;
+    padding-top: 4rem;
     width: 50%;
 }
 .section > .text{
@@ -131,8 +137,8 @@ body{
 
 }
 #product{ 
- padding-left: 15%;
- padding-right: 12%;
+ padding-left: 11%;
+ padding-right: 8%;
  padding-top: 2rem;
  flex-direction: row;
  text-align: left;
@@ -145,12 +151,12 @@ body{
     float:left;
     padding-right: 2rem;
 }
-#product p,#product h1{
+#product p,#product h1,#product a{
     color: #3863D9;
     text-align: left;
 }
 #product > .heading{
-    font-size: 2.5rem;
+    font-size: 40px;
 }
 #contentlinks{
     display: flex;
@@ -162,6 +168,7 @@ body{
 #contentlinks img{
     width: 3rem;
     height:3rem;
+    transition: width .2s, height .2s;
 }
 .darkheading,.darkheading b{
     color:#3863D9!important;
@@ -173,7 +180,7 @@ body{
     margin: 0 0 0 0!important;
     padding: 0 0 0 0!important;
     height:20%;
-    font-size: 2rem;
+    font-size: 32px;
     padding-top: 5rem!important;
 }
 .centerparagraph{
@@ -183,11 +190,11 @@ body{
     margin-right: auto;
     padding: 0 0 0 0!important;
     height:60%;
-    font-size: 2rem;
+    font-size: 32px;
     padding-top: 2rem!important;
 }
 .infotab{
-    width: 50%;
+    width: 80%;
     margin-left:auto;
     margin-right:auto;
     margin-top:2rem;
@@ -207,30 +214,80 @@ body{
 }
 .list p,.list b{
     text-align: left;
-    font-size: 2rem;
+    font-size: 32px;
 }
 .infotab > img{
-    width: 36rem;
+    width: 45%;
     height: 85%;
     padding-left: 5%;
     padding-top: 2rem;
 }
+#emaildiv{
+    width: 70%;
+    height: 60vh;
+    background-color: #172959;
+    box-shadow: .2rem .2rem .4rem black;
+    padding-bottom: 1rem;
+    padding-top: 1rem;
+    margin-bottom: 3rem;
+    margin-left:auto;
+    margin-right:auto;
+}
+#emaildiv > textarea{
+    width:95%;
+    padding: 1rem 1rem 1rem 1rem;
+    margin-top:1rem;
+    margin-left:auto;
+    margin-right:auto;
+    margin-bottom: 1rem;
+    height:75%;
+    background-color: #3863D9;
+    color: #172959;
+    border:none;
+    text-align: left;
+    resize: none;
+    outline-width: 0;
+    font-size: 32px;
+    display: block;
+}
+#emaildiv > textarea::placeholder{
+    color:#172959
+}
+#emaildiv > button{
+    background-color: #3863D9;
+    color: #172959;
+    border:none;
+    width: 10%;
+    height: 10%;
+    font-size:32px;
+}
+.circle{
+    border-radius: 50%;
+    background-color: rgb(10, 54, 134);
+    width: 1rem;
+    height:1rem;
+    /* left:0px;
+    top:0px; */
+    transition: opacity .3s ease-in-out;
+    position: absolute;
+    opacity: 0%;
+}
 @media only screen and (max-width: 600px) {
     #postermain>p{
-        font-size: 1.5rem;
+        font-size: 24px;
     }
     .section > .headingimg > img{
         width: 40%;
         height:70%;
     }  
     #nav > a{
-        font-size: 1rem;
+        font-size: 16px;
     }
 }
 
 @media only screen and (min-width: 600px) {
     #postermain>p{
-        font-size: 2.5rem;
+        font-size: 40px;
     }
     .section > .headingimg > img{
         width: 40%;
@@ -276,6 +333,6 @@ body{
         font-size: 4rem;
     }
     #nav > a{
-        font-size: 1.5rem;
+        font-size:24px;
     }
 }
